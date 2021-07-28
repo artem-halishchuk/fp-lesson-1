@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        // task-2 START
+        // task-3 START
         do {
-            var temperatureC = +prompt("Введите температуру в градусах °C", 0);
-        } while (isNaN(temperatureC) == true);
-        alert("Температуру в градусах °F = " + (temperatureC * (9 / 5) + 32));
-        // task-2 END
+            var firstSide = +prompt("Введите значение для первой стороны прямоугольника (м)", 0);
+        } while (isNaN(firstSide) == true);
+        do {
+            var secondSide = +prompt("Введите значение для второй стороны прямоугольника (м)", 0);
+        } while (isNaN(secondSide) == true);
+        alert("Площадь прямоугольника = " + (firstSide * secondSide) + " м,\n" + "а периметр прямоугольника = " + ((firstSide * secondSide) * 2) + " м");
+        // task-3 END
     </script>
 </head>
 
