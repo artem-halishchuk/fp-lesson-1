@@ -7,6 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        // task-1 START
+        do {
+            var namberFirst = +prompt("Ведите первое число для вычесления среднего арефметического", 0);
+        } while (isNaN(namberFirst) == true);
+        do {
+            var namberSecond = +prompt("Ведите второе число для вычесления среднего арефметического", 0);
+        } while (isNaN(namberSecond) == true);
+        do {
+            var namberThird = +prompt("Ведите третье число для вычесления среднего арефметического", 0);
+        } while (isNaN(namberThird) == true);
+        alert("Cреднее арефметическое трех чисел = " + ((namberFirst + namberSecond + namberThird) / 3));
+        // task-1 END
+        // task-2 START
+        do {
+            var temperatureC = +prompt("Введите температуру в градусах °C", 0);
+        } while (isNaN(temperatureC) == true);
+        alert("Температуру в градусах °F = " + (temperatureC * (9 / 5) + 32));
+        // task-2 END
         // task-3 START
         do {
             var firstSide = +prompt("Введите значение для первой стороны прямоугольника (м)", 0);
@@ -15,7 +33,7 @@
             var secondSide = +prompt("Введите значение для второй стороны прямоугольника (м)", 0);
         } while (isNaN(secondSide) == true);
         alert("Площадь прямоугольника = " + (firstSide * secondSide) + " м,\n" + "а периметр прямоугольника = " + ((firstSide * secondSide) * 2) + " м");
-        // task-3 END
+        // task-3 END        
     </script>
 </head>
 
